@@ -1,0 +1,49 @@
+name: Generate JSON schema from TS configuration
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: ["config"]
+    paths-ignore:
+      - "**/README.md"
+  # Daily run of this workflow at the end of the day
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  generate-configuration-schema:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        # Different Node versions. Each node version will trigger the action
+        node-version:
+          - 18.x
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+        # Runs a single command using the runners shell
+      - name: Install dependencies
+        run: |
+          npm install
+      - name: Generate the schema file
+        shell: bash
+        run: |
+          # make file runnable, might not be necessary
+          chmod +x "${GITHUB_WORKSPACE}/.github/scripts/run_generate_json_schema.sh"
+          # run script
+          "${GITHUB_WORKSPACE}/.github/scripts/run_generate_json_schema.sh"
+      - name: Commit and push changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git status
+          ls -al
+          ls -al ./schemas
+          git add .
+          git commit -m "generated the configuration json schema on `date +'%Y-%m-%d'`" || echo "No changes to commit"
+          git push
