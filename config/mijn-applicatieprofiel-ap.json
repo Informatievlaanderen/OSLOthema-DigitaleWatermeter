@@ -11,8 +11,8 @@
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "contributors-file": "stakeholders.csv",
     "contributors-column": "MijnKolom",
-    "site": "site-skeleton/DigitaleWatermeter-ap",
+    "site": "site-skeleton/OSLO-DigitaleWatermeter",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter/issues",
-    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/erkende-standaard/applicatieprofiel-digitalewatermeter.html"
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/kandidaatstandaard/applicatieprofiel-digitalewatermeter.html"
   }
 ]
