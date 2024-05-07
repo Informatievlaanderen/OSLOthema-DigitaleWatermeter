@@ -1,8 +1,7 @@
-Voornaam;Naam;Affiliatie;E-mail;Website;MijnKolom;
-Pieter Jan;Haest;;pieterjan.haest@dewatergroep.be;A;
-Pieter Jan;Haest;;pieterjan.haest@dewatergroep.be;A;
-Eva;Robbrecht;;eva.robbrecht@vlaanderen.be;;E;
-Samuel;Van Ackere;;samuel.vanackere@vlaanderen.be;;E;
-Geert;Thijs;;geert.thijs@vlaanderen.be;;E;
+Voornaam;Naam;Affiliatie;E-mail;Website;MijnKolom
+Pieter Jan;Haest;;pieterjan.haest@dewatergroep.be;;A
+Pieter Jan;Haest;;pieterjan.haest@dewatergroep.be;;A
+Eva;Robbrecht;;eva.robbrecht@vlaanderen.be;;E
+Samuel;Van Ackere;;samuel.vanackere@vlaanderen.be;;E
+Geert;Thijs;;geert.thijs@vlaanderen.be;;E
 Ben;De Meester;;ben.demeester@ugent.be;;E
-
