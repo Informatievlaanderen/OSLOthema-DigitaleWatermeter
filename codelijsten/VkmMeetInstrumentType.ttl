@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType>  a skos:ConceptScheme ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> ;
+skos:prefLabel "MeetInstrumentType"@nl ;
+skos:definition "Codelijst van meetinstrumenttypes"@nl .
+
+<https://data.vlaanderen.be/id/concept/VkmMeetInstrumentType/radar>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> ;
+skos:definition "sensor dat radiogolven uitzendt en vervolgens de gereflecteerde golven detecteert om de positie, snelheid en richting van objecten te bepalen"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> ;
+skos:notation "radar" ;
+skos:prefLabel "radar"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> .
+
+<https://data.vlaanderen.be/id/concept/VkmMeetInstrumentType/rubberslang>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> ;
+skos:definition "sensor met één of meerdere rubberen slangen voor meten verkeersvolume door luchtdrukverandering bij overrijden door voertuigen"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> ;
+skos:notation "rubber" ;
+skos:prefLabel "rubberslang"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> .
+
+<https://data.vlaanderen.be/id/concept/VkmMeetInstrumentType/piezzo>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> ;
+skos:definition "sensor die de verkeersdruk meet via piëzoelektrische sensoren bij overrijden door voertuigen"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> ;
+skos:notation "piezo" ;
+skos:prefLabel "piezzo"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> .
+
+<https://data.vlaanderen.be/id/concept/VkmMeetInstrumentType/glasvezel>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> ;
+skos:definition "sensor die veranderingen detecteert via glasvezeltechnologie, vaak voor lichtintensiteit of trillingen"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> ;
+skos:notation "fiber" ;
+skos:prefLabel "glasvezel"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> .
+
+<https://data.vlaanderen.be/id/concept/VkmMeetInstrumentType/inductielus>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> ;
+skos:definition "sensor die voertuigen detecteert via magnetische veldveranderingen in ingegraven lussen"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> ;
+skos:notation "loop" ;
+skos:prefLabel "inductielus"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> .
+
+<https://data.vlaanderen.be/id/concept/VkmMeetInstrumentType/standaard_Camera>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> ;
+skos:definition "Camera die voertuigen registreert en analyseert voor verkeersvolume en -gedrag op wegen"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> ;
+skos:notation "camera" ;
+skos:prefLabel "standaard camera"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> .
+
+<https://data.vlaanderen.be/id/concept/VkmMeetInstrumentType/ANPR_camera>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> ;
+skos:definition "Camera die kentekens herkent en registreert voor verkeersanalyse en handhaving"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> ;
+skos:notation "anpr" ;
+skos:prefLabel "ANPR camera"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> .
+
+<https://data.vlaanderen.be/id/concept/VkmMeetInstrumentType/manuele_telling>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> ;
+skos:definition "Handmatige registratie van voertuigen door waarnemers voor verkeersvolume en -classificatie"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> ;
+skos:notation "manual" ;
+skos:prefLabel "manuele telling"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> .
+
+<https://data.vlaanderen.be/id/concept/VkmMeetInstrumentType/telraam>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/VkmStatus/ingebruik> ;
+skos:definition "door de burger aangedreven oplossing voor het verzamelen van verkeersgegevens met een telraam apparaat"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> ;
+skos:notation "telraam" ;
+skos:prefLabel "telraam"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/VkmMeetInstrumentType> .
+
