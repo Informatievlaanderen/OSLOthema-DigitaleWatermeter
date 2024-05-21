@@ -1,0 +1,62 @@
+{
+  "naam": "Applicatieprofiel Digitale Watermeter",
+  "rapport" : "",
+  "verantwoordelijke_organisatie": "Digitaal Vlaanderen",
+  "identificator_organisatie": "https://data.vlaanderen.be/id/organisatie/OVO002949",
+  "publicatiedatum": "2024-04-30",
+  "type_toepassing": "Aanbevolen (vrijwillig)",
+  "categorie": "Applicatieprofiel",
+  "beschrijving" : "ap-digitalewatermeter-config.md",
+  "specificatiedocument": [
+    {
+      "naam": "Applicatieprofiel Digitale Watermeter",
+      "waarde": "https://data.vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter"
+    }
+  ],
+  "documentatie": [
+    {
+      "naam": "Vocabularium Digitale Watermeter",
+      "waarde": "https://data.vlaanderen.be/ns/DigitaleWatermeter"
+    }
+  ],
+  "charter": [
+    {
+      "naam": "Charter Digitale Watermeter",
+      "waarde": "Charter OSLO_DigitaleWatermeter.pdf"
+    }
+  ],
+  "verslagen": [
+    {
+      "naam": "Verslag Business Werkgroep - 11 maart 2024",
+      "waarde": "20240311_BusinessWorkshop_Verslag_OSLODigitaleWatermeter.pdf"
+    },
+    {
+      "naam": "Verslag Thematische Werkgroep I - 15 april 2024",
+      "waarde": "20240415_ThematicWorkshop1_Verslag_OSLODigitaleWatermeter.pdf"
+    }
+  ],
+  "presentaties": [
+    {
+      "naam": "Presentatie Business Werkgroep - 11 maart 2024",
+      "waarde": "20240311_BusinessWorkshop_Powerpoint_OSLODigitaleWatermeter.pptx"
+    },
+    {
+      "naam": "Presentatie Thematische Werkgroep I - 14 april 2024",
+      "waarde": "20240415_ThematicWorkshop1_Powerpoint_OSLODigitaleWatermeter.pptx"
+    },
+    {
+      "naam": "Presentatie Thematische Werkgroep II - 6 mei 2024",
+      "waarde": "20240506_ThematicWorkshop2_Powerpoint_OSLODigitaleWatermeter.pptx"
+    },
+    {
+      "naam": "Presentatie Thematische Werkgroep III - 21 mei 2024",
+      "waarde": "20240521_ThematicWorkshop3_Powerpoint_OSLODigitaleWatermeter.pptx"
+    }
+  ],
+  "functioneel_toepassingsgebied": "Semantische standaard voor de digitale transformatie van de Vlaamse nutsvoorzieningen",
+  "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid, nutssector",
+  "datum_van_aanmelding": "21 maart 2024",
+  "erkenning_werkgroep_datastandaarden": "TBD",
+  "erkenning_stuurgroep": "TBD"
+}
+
