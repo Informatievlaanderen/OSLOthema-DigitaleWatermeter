@@ -1,4 +1,4 @@
-# OSLOthema-myTheme
+# OSLOthema-DigitaleWatermeter
 
 This branch should be used to make the data standard available on the [standards registry of Flanders](https://data.vlaanderen.be/standaarden/).
 
