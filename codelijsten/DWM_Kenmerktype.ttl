@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/DWM_Kenmerktype>  a skos:ConceptScheme ;
+<https://www.w3.org/ns/adms#status> <https://data.vlaanderen.be/id/concept/Status/ingebruik> ;
+skos:prefLabel "Kenmerktype"@nl ;
+skos:definition "Codelijst van Kenmerktype"@nl .
+
+<https://data.vlaanderen.be/id/concept/DWM_Kenmerktype/index>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "meterstand op tijdstip fenomeentijd"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Kenmerktype> ;
+skos:notation "index" ;
+skos:prefLabel "index"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Kenmerktype> .
+
+<https://data.vlaanderen.be/id/concept/DWM_Kenmerktype/verbruiktVolume>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "watervolume verbruikt in de periode fenomeentijd"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Kenmerktype> ;
+skos:notation "volume" ;
+skos:prefLabel "verbruiktVolume"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Kenmerktype> .
+

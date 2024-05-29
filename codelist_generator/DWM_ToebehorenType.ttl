@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/DWM_ToebehorenType>  a skos:ConceptScheme ;
+<https://www.w3.org/ns/adms#status> <https://data.vlaanderen.be/id/concept/Status/ingebruik> ;
+skos:prefLabel "ToebehorenType"@nl ;
+skos:definition "Codelijst van ToebehorenType"@nl .
+
+<https://data.vlaanderen.be/id/concept/DWM_ToebehorenType/Aansluiting>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "nan"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_ToebehorenType> ;
+skos:notation "aansluiting" ;
+skos:prefLabel "Aansluiting"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_ToebehorenType> .
+
+<https://data.vlaanderen.be/id/concept/DWM_ToebehorenType/Aftakkingspunt>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "nan"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_ToebehorenType> ;
+skos:notation "aftakkingspunt" ;
+skos:prefLabel "Aftakkingspunt"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_ToebehorenType> .
+

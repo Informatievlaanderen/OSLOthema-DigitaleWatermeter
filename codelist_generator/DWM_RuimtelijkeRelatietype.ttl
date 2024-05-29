@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype>  a skos:ConceptScheme ;
+<https://www.w3.org/ns/adms#status> <https://data.vlaanderen.be/id/concept/Status/ingebruik> ;
+skos:prefLabel "RuimtelijkeRelatietype"@nl ;
+skos:definition "Codelijst van RuimtelijkeRelatietype"@nl .
+
+<https://data.vlaanderen.be/id/concept/DWM_RuimtelijkeRelatietype/Disjunct>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "Er is geen enkel punt gemeenschappelijk tussen Plaats A en Plaats B."@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> ;
+skos:notation "disjunct" ;
+skos:prefLabel "Disjunct"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> .
+
+<https://data.vlaanderen.be/id/concept/DWM_RuimtelijkeRelatietype/Aangrenzend>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "Plaats A en Plaats B hebben een gemeenschappelijke grens in de vorm van een lijn of punt."@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> ;
+skos:notation "aangrenzend" ;
+skos:prefLabel "Aangrenzend"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> .
+
+<https://data.vlaanderen.be/id/concept/DWM_RuimtelijkeRelatietype/overlappend>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "Plaats A en Plaats  B zijn overlappend."@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> ;
+skos:notation "overlappend" ;
+skos:prefLabel "overlappend"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> .
+
+<https://data.vlaanderen.be/id/concept/DWM_RuimtelijkeRelatietype/omvat>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "Plaats A omvat volledig Plaats B."@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> ;
+skos:notation "omvat" ;
+skos:prefLabel "omvat"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> .
+
+<https://data.vlaanderen.be/id/concept/DWM_RuimtelijkeRelatietype/LigtBinnenin>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "Plaats A ligt volledig binnenin plaats B"@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> ;
+skos:notation "ligtbinnenin" ;
+skos:prefLabel "LigtBinnenin"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> .
+
+<https://data.vlaanderen.be/id/concept/DWM_RuimtelijkeRelatietype/gelijk>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "Plaats A en Plaats B vallen samen."@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> ;
+skos:notation "gelijk" ;
+skos:prefLabel "gelijk"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_RuimtelijkeRelatietype> .
+
