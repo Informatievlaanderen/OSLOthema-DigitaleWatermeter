@@ -1,3 +1,5 @@
 .idea
 *.ldb
 *.xlsm
+.ssh/*
+.ssh
