@@ -26,7 +26,7 @@ jobs:
           at: /tmp/workspace
       - add_ssh_keys:
           fingerprints:
-            - "21:ea:aa:0a:75:81:33:67:6e:70:37:f7:1f:0b:58:d0"
+            - "SHA256:hXXM8dQ3pheLhJjv/hhFUozdl3cf3xV/qffh4RdpRIU"
       - run:
           name: Checkout target repo
           workdir: /tmp
@@ -38,7 +38,7 @@ jobs:
           workdir: /tmp/OSLO-codelistgenerated
           command: |
             git fetch origin
-            git checkout -b "verkeersmetingen-main" --track "origin/verkeersmetingen-main" || git checkout "verkeersmetingen-main"
+            git checkout -b "digitalewatermeter-main" --track "origin/digitalewatermeter-main" || git checkout "digitalewatermeter-main"
       - run:
           name: Copy assets
           workdir: /tmp/workspace
@@ -55,7 +55,7 @@ jobs:
             git config user.name "Circle CI Builder"
             git add .
             git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
-            git push origin "verkeersmetingen-main"
+            git push origin "digitalewatermeter-main"
 workflows:
   version: 2
   generate_documentation:
