@@ -1,0 +1,1016 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix qudt: <http://qudt.org/2.1/schema/qudt/> .
+
+<https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#IndividueelVerbruikObservatie> a owl:Class;
+rdfs:subClassOf <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>.
+<https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#GeaggregeerdVerbruikObservatie> a owl:Class;
+rdfs:subClassOf <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>.
+<https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#MeterstaatObservatie> a owl:Class;
+rdfs:subClassOf <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>.
+
+<https://saref.etsi.org/core/Meter> a owl:Class ; rdfs:subClassOf <https://www.w3.org/ns/sosa/Sensor> .
+<https://saref.etsi.org/saref4watr/WaterMeter> a owl:Class ; rdfs:subClassOf <https://saref.etsi.org/core/Meter> .
+<https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#Software> a owl:Class ; rdfs:subClassOf <https://www.w3.org/ns/sosa/Sensor> .
+<https://linkedpaperswithcode.com/class/model> a owl:Class ; rdfs:subClassOf <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#Software> .
+
+qudt:Unit a owl:Class ; rdfs:subClassOf skos:Concept .
+
+<http://www.w3.org/2006/time#Instant> a owl:Class ; rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity>.
+<http://www.w3.org/2006/time#ProperInterval> a owl:Class ; rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity>.
+
+<https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#Meterzone> a owl:Class ; rdfs:subClassOf <http://purl.org/dc/terms/Location> .
+<https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#Bevoorradingsgebied> a owl:Class ; rdfs:subClassOf <http://purl.org/dc/terms/Location> .
+<https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#Verbruikszone> a owl:Class ; rdfs:subClassOf <http://purl.org/dc/terms/Location> .
+<http://purl.org/dc/terms/Location> a owl:Class ; rdfs:subClassOf <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature> .
+
+<https://qudt.org/schema/qudt/QuantityValue> a owl:Class ; rdfs:subClassOf <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30> <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30shapes> <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#BevoorradingsgebiedShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#GeaggregeerdVerbruikObservatieShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#GeaggregeerdVerbruikTijdreeksobservatieShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#IndividueelVerbruikObservatieShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#IndividueelVerbruikTijdreeksobservatieShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MeterstaatObservatieShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MeterzoneShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MomentKwantitatieveWaardepaarShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#RuimtelijkRelatieShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#SoftwareShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#TemporeelMomentKwantitatiefBereikShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#VerbruikszoneShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#KenmerktypeShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ObservatieShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#DomeinobjectShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#PlaatsShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#EenheidShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MetertypeShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#PlaatstypeShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#RuimtelijkeRelatietypeShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#RuimtelijkObjectTypeShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#AfleverpunttypeShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ToebehorentypeShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#SysteemtypeShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ConceptShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MomentShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#PeriodeShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#TemporeleEntiteitShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#IdentificatorShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#AdresvoorstellingShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#GeometrieShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ObservatieverzamelingShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ObservatieprocedureShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#DeploymentShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#StatistischeObservatieShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MachineLearningModelShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#KwantitatieveWaardeShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MeterShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#WaterMeterShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#AansluitingShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#NutsvoorzieningnetwerkShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#SensorShape>,
+    <https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ObservatiecontextShape> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#AansluitingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.opengis.net/ont/sf#Point>;
+    shacl:description "Geometrie van de Knoop."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geometrie"@nl;
+    shacl:path <https://vocab.belgif.be/ns/network#Node.geometry>
+  ], [
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Identificator van het element."@nl;
+    shacl:maxCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#identifier>
+  ], [
+    shacl:class <http://www.w3.org/ns/locn#Address>;
+    shacl:description "Adres van de aansluiting."@nl;
+    shacl:maxCount 1;
+    shacl:name "adres"@nl;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#address>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Aard van de aansluiting waar een voorziening (electriciteit, water, ...) of dienst geleverd wordt. Gaat het om een gebouw of gebouweenheid?"@nl;
+    shacl:maxCount 1;
+    shacl:name "afleverpunt"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#afleverpunt>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Connection>;
+    shacl:description "Aansluiting waarvan deze aansluiting afgetakt is."@nl;
+    shacl:maxCount 1;
+    shacl:name "hoofdaansluiting"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#hoofdaansluiting>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Connection>;
+    shacl:description "Aansluiting die afgetakt is van deze aansluiting."@nl;
+    shacl:name "subaansluiting"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#subaansluiting>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Aard van het Toebehoren."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "toebehorentype"@nl;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Connection.appurtenanceType>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Connection> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#AdresvoorstellingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype rdf:langString;
+    shacl:description "Hoogste Administratieve eenheid van het adres, doorgaans een land."@nl;
+    shacl:maxCount 1;
+    shacl:name "administratieve eenheid niveau 1"@nl;
+    shacl:path <http://www.w3.org/ns/locn#adminUnitL1>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "De regio van het adres, doorgaans een provincie of deelstaat of gelijkaardig gebied dat typisch meerdere plaatsen omvat."@nl;
+    shacl:maxCount 1;
+    shacl:name "administratieve eenheid niveau 2"@nl;
+    shacl:path <http://www.w3.org/ns/locn#adminUnitL2>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Naam ve geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is"@nl;
+    shacl:maxCount 1;
+    shacl:name "adresgebied"@nl;
+    shacl:path <http://www.w3.org/ns/locn#addressArea>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."@nl;
+    shacl:maxCount 1;
+    shacl:name "busnummer"@nl;
+    shacl:path <https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Gemeentenaam van het adres."@nl;
+    shacl:maxCount 1;
+    shacl:name "gemeentenaam"@nl;
+    shacl:path <https://vocab.belgif.be/ns/address#municipalityName>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."@nl;
+    shacl:maxCount 1;
+    shacl:name "huisnummer"@nl;
+    shacl:path <https://vocab.belgif.be/ns/address#AddressRepresentation.houseNumber>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Land waarin het adres gelegen is."@nl;
+    shacl:maxCount 1;
+    shacl:name "land"@nl;
+    shacl:path <https://vocab.belgif.be/ns/address#country>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Alfanumerieke code die de adreslocator uniek identificeert binnen de straat, administratieve eenheid etc."@nl;
+    shacl:name "locatieaanduiding"@nl;
+    shacl:path <http://www.w3.org/ns/locn#locatorDesignator>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Naam of omschrijving van het het geografisch object dat de adreslocator aanduidt."@nl;
+    shacl:name "locatienaam"@nl;
+    shacl:path <http://www.w3.org/ns/locn#locatorName>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Postbusnummer in een postkantoor."@nl;
+    shacl:maxCount 1;
+    shacl:name "postbus"@nl;
+    shacl:path <http://www.w3.org/ns/locn#poBox>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."@nl;
+    shacl:maxCount 1;
+    shacl:name "postcode"@nl;
+    shacl:path <http://www.w3.org/ns/locn#postCode>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Naam waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."@nl;
+    shacl:maxCount 1;
+    shacl:name "postnaam"@nl;
+    shacl:path <http://www.w3.org/ns/locn#postName>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Straatnaam van het adres."@nl;
+    shacl:maxCount 1;
+    shacl:name "straatnaam"@nl;
+    shacl:path <http://www.w3.org/ns/locn#thoroughfare>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/address#Adres>;
+    shacl:description "Adres waarvan de adresvoorstelling is afgeleid."@nl;
+    shacl:maxCount 1;
+    shacl:name "verwijst Naar"@nl;
+    shacl:path <https://vocab.belgif.be/ns/address#refersTo>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Het complete adres in één string, al dan niet geformatteerd."@nl;
+    shacl:maxCount 1;
+    shacl:name "volledig Adres"@nl;
+    shacl:path <http://www.w3.org/ns/locn#fullAddress>
+  ];
+  shacl:targetClass <http://www.w3.org/ns/locn#Address> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#AfleverpunttypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#BevoorradingsgebiedShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNetwork>;
+    shacl:description "Associatie tussen het bevoorradingsgebied en het nutvoorzieningnetwerk waartoe het behoort."@nl;
+    shacl:maxCount 1;
+    shacl:name "netwerk"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/digitaleWatermeter#netwerk>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#Bevoorradingsgebied> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ConceptShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#DeploymentShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Connection>;
+    shacl:name "deployedOp"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/digitaleWatermeter#deployedOp>
+  ], [
+    shacl:datatype xsd:dateTime;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "deploymentTijdstip"@nl;
+    shacl:path <http://fixme.com#deploymentTijdstip>
+  ], [
+    shacl:class dc:Agent;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "gedeployedDoor"@nl;
+    shacl:path <http://fixme.com#gedeployedDoor>
+  ];
+  shacl:targetClass <http://www.w3.org/ns/ssn/#Deployment> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#DomeinobjectShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Aard van het Domeinobject."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc:type
+  ];
+  shacl:targetClass <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#EenheidShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://qudt.org/2.1/schema/qudt/Unit> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#GeaggregeerdVerbruikObservatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class dc:Location;
+    shacl:description "De vooraf gedefinieerde zone, waarin een groep van meters voor een geobserveerde periode zich bevinden."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geobserveerdObject"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest>
+  ], [
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
+    shacl:description "Totaal waterverbruik (volume) gemeten door of voorspeld voor een groep van meters voor één periode."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "resultaat"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#GeaggregeerdVerbruikObservatie> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#GeaggregeerdVerbruikTijdreeksobservatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class dc:Location;
+    shacl:description "De vooraf gedefinieerde zone, waarin een groep van meters voor een geobserveerde periode zich bevinden."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geobserveerdobject"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest>
+  ], [
+    shacl:class <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#TemporeelMomentKwantitatiefBereik>;
+    shacl:description "Totaal waterverbruik (volume) gemeten of voorspeld voor een groep van meters en voor meer dan één punt in de tijd."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "resultaat"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#GeaggregeerdVerbruikTijdreeksobservatie> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#GeometrieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:description "Geometrie uitgedrukt in gml-formaat."@nl;
+    shacl:maxCount 1;
+    shacl:name "als GML"@nl;
+    shacl:path <http://www.opengis.net/ont/geosparql#asGML>
+  ], [
+    shacl:description "Geometrie uitgedrukt in wkt-formaat."@nl;
+    shacl:maxCount 1;
+    shacl:name "als WKT"@nl;
+    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>
+  ], [
+    shacl:class <https://data.vlaanderen.be/ns/generiek#Opmeting>;
+    shacl:description "De manier waarop de geometrie werd bepaald."@nl;
+    shacl:maxCount 1;
+    shacl:name "opmeting"@nl;
+    shacl:path <https://vocab.belgif.be/ns/generic#Geometry.survey>
+  ];
+  shacl:targetClass <http://www.w3.org/ns/locn#Geometry> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#IdentificatorShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:description "String gebruikt om het object uniek te identificeren."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path skos:notation
+  ], [
+    shacl:class dc:Agent;
+    shacl:description "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend door"@nl;
+    shacl:path dc:creator
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend door (String)"@nl;
+    shacl:path <http://www.w3.org/ns/adms#schemaAgency>
+  ], [
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend op"@nl;
+    shacl:path dc:issued
+  ];
+  shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#IndividueelVerbruikObservatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Connection>;
+    shacl:description "Het aansluitingspunt dat gelinkt is aan het verbruik dat door één watermeter wordt gemeten."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geobserveerdObject"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest>
+  ], [
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
+    shacl:description "Het waterverbruik gemeten of voorspeld op één aansluitingspunt gerelateerd aan één tijdstip (index) of periode (volume)."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "resultaat"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#IndividueelVerbruikObservatie> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#IndividueelVerbruikTijdreeksobservatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Connection>;
+    shacl:description "Het aansluitingspunt dat gelinkt is aan het verbruik dat door één watermeter wordt gemeten."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geobserveerdObject"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest>
+  ], [
+    shacl:class <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#TemporeelMomentKwantitatiefBereik>;
+    shacl:description "Waterverbruik gemeten of voorspeld voor één meter (index of volume) voor meer dan één punt in de tijd."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "resultaat"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#IndividueelVerbruikTijdreeksobservatie> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#KenmerktypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://www.w3.org/ns/sosa/Sensor>;
+    shacl:description "Het kenmerktype van de gebruikte sensor tijdens de observatie."@nl;
+    shacl:name "isGeobserveerdMet"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/isObservedBy>
+  ];
+  shacl:targetClass <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#KwantitatieveWaardeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
+    shacl:maxCount 1;
+    shacl:name "eenheid"@nl;
+    shacl:path <https://qudt.org/schema/qudt/hasUnit>
+  ], [
+    shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <https://qudt.org/schema/qudt/value>
+  ];
+  shacl:targetClass <https://qudt.org/schema/qudt/QuantityValue> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MachineLearningModelShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:description "Creatiedatum van het model."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "created"@nl;
+    shacl:path <https://linkedpaperswithcode.com/created>
+  ], [
+    shacl:description "Beschrijving van de werking van het model."@nl;
+    shacl:maxCount 1;
+    shacl:name "description"@nl;
+    shacl:path dc:description
+  ], [
+    shacl:description "Naam van het model"@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "name"@nl;
+    shacl:path dc:title
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "De aard of genre van het model."@nl;
+    shacl:name "type"@nl;
+    shacl:path <https://linkedpaperswithcode.com/type>
+  ], [
+    shacl:description "De huidige versie van het model."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "version"@nl;
+    shacl:path <http://openml.org/openml#version>
+  ];
+  shacl:targetClass <https://linkedpaperswithcode.com/class/model> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MeterShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype rdf:langString;
+    shacl:description "Fabrikant van de meter."@nl;
+    shacl:maxCount 1;
+    shacl:name "fabrikant"@nl;
+    shacl:path <https://saref.etsi.org/core/hasManufacturer>
+  ], [
+    shacl:description "Het fabrieksnummer van een toestel."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "heeftFabrieksnummer"@nl;
+    shacl:path <https://w3id.org/def/S4WATR#hasFabricationNumber>
+  ], [
+    shacl:description "De firmware versie van een toestel."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "heeftFirmwareVersion"@nl;
+    shacl:path <https://w3id.org/def/S4WATR#hasFirmwareVersion>
+  ], [
+    shacl:description "De hardware versie van een toestel"@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "heeftHardwareVersie"@nl;
+    shacl:path <https://w3id.org/def/S4WATR#hasHardwareVersion>
+  ], [
+    shacl:description "De vresie van een toestel."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "heeftVersie"@nl;
+    shacl:path <https://w3id.org/def/S4WATR#hasVersion>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Model van de meter."@nl;
+    shacl:maxCount 1;
+    shacl:name "model"@nl;
+    shacl:path <https://saref.etsi.org/core/hasModel>
+  ], [
+    shacl:description "De radiofrequentie waarop een toestel communiceert."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "werktopRadiofrequentie"@nl;
+    shacl:path <https://saref.etsi.org/saref4watr/operatesAtRadiofrequency>
+  ], [
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "vereistStroom"@nl;
+    shacl:path <https://saref.etsi.org/saref4watr/requiresPower>
+  ], [
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Identificator van de meter."@nl;
+    shacl:minCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/digitaleWatermeter#identificator>
+  ], [
+    shacl:class <http://www.w3.org/ns/locn#Address>;
+    shacl:description "Adres van de locatie waarvan de meter het verbruik meet"@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "verbruiksadres"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/digitaleWatermeter#verbruiksadres>
+  ];
+  shacl:targetClass <https://saref.etsi.org/core/Meter> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MeterstaatObservatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://saref.etsi.org/core/Meter>;
+    shacl:description "Het metertoestel"@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geobserveerdObject"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#MeterstaatObservatie> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MetertypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MeterzoneShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype xsd:integer;
+    shacl:description "Het aantal meters dat binnen de Meterzone ligt."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "aantalMeters"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#aantalMeters>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Aard van de meter."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "metertype"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#metertype>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#Meterzone> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MomentKwantitatieveWaardepaarShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/2006/time#Instant>;
+    shacl:description "Tijdstip van wanneer een waarde is geobserveerd, onderdeel van een kwantitatief waardepaar."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "tijdstip"@nl
+  ], [
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
+    shacl:description "Waarde van een observatie op een specifieke tijdstip, onderdeel van een kwantitatief waardepaar."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#waarde>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#MomentKwantitatieveWaardepaar> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#MomentShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype xsd:dateTime;
+    shacl:description "Positie in de tijd uitgedrukt dmv xsd:dateTime."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "inXSDDateTime"@nl;
+    shacl:path <http://www.w3.org/2006/time#inXSDDateTime>
+  ];
+  shacl:targetClass <http://www.w3.org/2006/time#Instant> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#NutsvoorzieningnetwerkShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype rdf:langString;
+    shacl:description "Naam waaronder het netwerk bekend staat."@nl;
+    shacl:name "geografischeNaam"@nl;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#geographicalName>
+  ], [
+    shacl:class dc:Agent;
+    shacl:description "Partijen die bevoegd zijn om het Nutsvoorzieningnetwerk te beheren, exploiteren of er eigenaar van is."@nl;
+    shacl:minCount 1;
+    shacl:name "bevoegdePartij"@nl;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#authorityRole>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Wettelijke tekst waarin vertrouwelijkheidsclausules worden beschreven die van toepassing zijn op de informatie over het nutsnetwerk."@nl;
+    shacl:name "disclaimer"@nl;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#disclaimer>
+  ], [
+    shacl:class foaf:Document;
+    shacl:description "Verwijzing naar een Document met extra informatie over het Netwerk."@nl;
+    shacl:name "documentatie"@nl;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#documentation>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Het type nutsvoorzieningnetwerk of het thema van het nutsvoorzieningnetwerk."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "nutsvoorzieningnetwerktype"@nl;
+    shacl:path dc11:type
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#VerticalPosition>;
+    shacl:description "Standaard VerticalePositie van elementen in het netwerk."@nl;
+    shacl:name "standaardVerticalePositiedetail"@nl;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#standardVerticalPositionDetail>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#UtilityNetwork> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ObservatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/2006/time#TemporalEntity>;
+    shacl:description "Het moment waarop het resultaat van de Observatie van toepassing was."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "fenomeentijd"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>;
+    shacl:description "Observaties waarvan de resultaten op een of andere manier samenhangen."@nl;
+    shacl:name "geassocieerdeObservatie"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#ObservationContext.relatedObservation>
+  ], [
+    shacl:class <http://www.w3.org/ns/sosa/Procedure>;
+    shacl:description "De gebruikte procedure van de observatie."@nl;
+    shacl:name "gebruikteProcedure"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/usedProcedure>
+  ], [
+    shacl:class <http://www.w3.org/2006/time#ProperInterval>;
+    shacl:description "Periode waarvoor het resultaat van de Observatie geldt."@nl;
+    shacl:maxCount 1;
+    shacl:name "geldigeTijd"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>;
+    shacl:description "Kenmerk dat men observeert vh geobserveerdObject."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geobserveerdKenmerk"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature>;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geobserveerdObject"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest>
+  ], [
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "De persoon of het ding dat dient om de observatie vast te stellen."@nl;
+    shacl:name "identificator"@nl;
+    shacl:path <http://www.w3.org/ns/adms#identifier>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19156/2011/Observation#NamedValue>;
+    shacl:description "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie."@nl;
+    shacl:name "parameter"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter>
+  ], [
+    shacl:class rdfs:Resource;
+    shacl:description "Resultaat van de observatie"@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "resultaat"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_Element>;
+    shacl:description "Mate waarin het resultaat van de Observatie voldoet aan de vereisten of verwachtingen."@nl;
+    shacl:name "resultaatkwaliteit"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultQuality>
+  ], [
+    shacl:class <http://www.w3.org/2006/time#Instant>;
+    shacl:description "Tijdstip waarop het resultaat van de Observatie werd bekomen."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "resultaattijd"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultTime>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Het type van observatie."@nl;
+    shacl:name "type"@nl;
+    shacl:path dc:type
+  ], [
+    shacl:class dc:Agent;
+    shacl:description "Agent die de Observatie heeft uitgevoerd."@nl;
+    shacl:name "uitgevoerdDoor"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/observaties-en-metingen#Observatie.uitgevoerdDoor>
+  ], [
+    shacl:class <https://www.w3.org/ns/sosa/Sensor>;
+    shacl:description "Sensor waarmee de Observatie is uitgevoerd."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "uitgevoerdMetSensor"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/madeBySensor>
+  ];
+  shacl:targetClass <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ObservatiecontextShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>;
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Observatie (target)"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/observaties-en-metingen#Observatiecontext.observatie.target>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>;
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Observatie (source)"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/observaties-en-metingen#Observatiecontext.observatie.source>
+  ] .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ObservatieprocedureShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://www.w3.org/ns/sosa/Sensor>;
+    shacl:description "Aard van de Observatieprocedure."@nl;
+    shacl:name "geïmplementeerdMet"@nl;
+    shacl:path <http://www.w3.org/ns/ssn/implementedBy>
+  ], [
+    shacl:class <http://www.w3.org/ns/ssn/Input>;
+    shacl:description "Verwijzing naar de Input die de procedure vereist."@nl;
+    shacl:name "input"@nl;
+    shacl:path <http://www.w3.org/ns/ssn/hasInput>
+  ], [
+    shacl:class <http://www.w3.org/ns/ssn/Output>;
+    shacl:description "Verwijzing naar de Output die de Procedure genereert."@nl;
+    shacl:name "output"@nl;
+    shacl:path <http://www.w3.org/ns/ssn/hasOutput>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19156/2011/Observation#NamedValue>;
+    shacl:description "Willekeurig gegeven gassocieerd met de Observatieprocedure."@nl;
+    shacl:name "parameter"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Observatieprocedure.parameter>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Verwijzing naar een document dat de Observatieprocedure beschrijft."@nl;
+    shacl:name "specificatie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Observatieprocedure.specificatie>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Aard van de Observatieprocedure."@nl;
+    shacl:name "type"@nl;
+    shacl:path dc:type
+  ];
+  shacl:targetClass <http://www.w3.org/ns/sosa/Procedure> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ObservatieverzamelingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/2006/time#TemporalEntity>;
+    shacl:description "De fenomeentijd vd Observaties."@nl;
+    shacl:maxCount 1;
+    shacl:name "fenomeentijd"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/phenomenonTime>
+  ], [
+    shacl:class <http://www.w3.org/ns/sosa/Procedure>;
+    shacl:description "De Procedure die de Observaties gebruikten."@nl;
+    shacl:maxCount 1;
+    shacl:name "gebruikteProcedure"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/usedProcedure>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>;
+    shacl:description "Het Kenmerk dat de Observaties observeerden."@nl;
+    shacl:maxCount 1;
+    shacl:name "geobserveerdKenmerk"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/observedProperty>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature>;
+    shacl:description "Het Object dat werd geobserveerd."@nl;
+    shacl:maxCount 1;
+    shacl:name "geobserveerdObject"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/hasFeatureOfInterest>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>;
+    shacl:description "Observatie die deel uitmaakt van de collectie."@nl;
+    shacl:minCount 1;
+    shacl:name "heeftLid"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/hasMember>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19156/2011/Observation#NamedValue>;
+    shacl:description "Parameter van de Observaties in de collectie."@nl;
+    shacl:maxCount 1;
+    shacl:name "parameter"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Observatieverzameling.parameter>
+  ], [
+    shacl:class <http://www.w3.org/2006/time#Instant>;
+    shacl:description "De resultaattijd van de Observaties."@nl;
+    shacl:maxCount 1;
+    shacl:name "resultaatTijd"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/resultTime>
+  ], [
+    shacl:class <https://www.w3.org/ns/sosa/Sensor>;
+    shacl:description "De sensor waarmee de Observaties in de collectie zijn uitgevoerd."@nl;
+    shacl:maxCount 1;
+    shacl:name "uitgevoerdMetSensor"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/madeBySensor>
+  ];
+  shacl:targetClass <http://www.w3.org/ns/sosa/ObservationCollection> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#PeriodeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/2006/time#Instant>;
+    shacl:description "Einde ve TemporeleEntiteit."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "tot"@nl;
+    shacl:path <http://www.w3.org/2006/time#hasEnd>
+  ], [
+    shacl:class <http://www.w3.org/2006/time#Instant>;
+    shacl:description "Start ve TemporeleEntiteit."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "van"@nl;
+    shacl:path <http://www.w3.org/2006/time#hasBeginning>
+  ];
+  shacl:targetClass <http://www.w3.org/2006/time#ProperInterval> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#PlaatsShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "Geometrie van de plaats of het gebied."@nl;
+    shacl:maxCount 1;
+    shacl:name "geometrie"@nl;
+    shacl:path <http://www.w3.org/ns/locn#geometry>
+  ], [
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Identificator van de plaats"@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#identificator>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Naam van de plaats of van het gebied."@nl;
+    shacl:maxCount 1;
+    shacl:name "plaatsnaam"@nl;
+    shacl:path rdfs:label
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Aard van de plaats"@nl;
+    shacl:name "type"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#type>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#RuimtelijkRelatie.plaats.source> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#PlaatstypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#RuimtelijkObjectTypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#RuimtelijkRelatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class dc:Location;
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Plaats (target)"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#RuimtelijkRelatie.plaats.target>
+  ], [
+    shacl:class dc:Location;
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Plaats (source)"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#RuimtelijkRelatie.plaats.source>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Aard van het verband tussen twee Plaatsen."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#type>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#RuimtelijkRelatie> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#RuimtelijkeRelatietypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#SensorShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."@nl;
+    shacl:name "type"@nl;
+    shacl:path dc:type
+  ], [
+    shacl:class <http://www.w3.org/ns/sosa/Procedure>;
+    shacl:description "Observatieprocedure die door de Sensor wordt toegepast."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "implementeert"@nl;
+    shacl:path <http://www.w3.org/ns/ssn/implements>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>;
+    shacl:description "Kenmerk dat door de Sensor wordt geobserveerd."@nl;
+    shacl:minCount 1;
+    shacl:name "observeert"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/observes>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>;
+    shacl:description "Observatie die met de Sensor is uitrgevoerd."@nl;
+    shacl:name "uitgevoerdeObservatie"@nl;
+    shacl:path <http://www.w3.org/ns/sosa/madeObservation>
+  ];
+  shacl:targetClass <https://www.w3.org/ns/sosa/Sensor> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#SoftwareShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#Software> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#StatistischeObservatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/2006/time#TemporalEntity>;
+    shacl:description "Het moment waarop het resultaat van de Observatie van toepassing was."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "fenomeentijd"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>;
+    shacl:description "Kenmerk dat men observeert vh geobserveerdObject."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geobserveerdKenmerk"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature>;
+    shacl:description "Object dat met observeert."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geobserveerdObject"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest>
+  ], [
+    shacl:class <http://www.w3.org/2006/time#Instant>;
+    shacl:description "Tijdstip waarop het resultaat van de Observatie werd bekomen."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "resultaattijd"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultTime>
+  ], [
+    shacl:class <https://data.vlaanderen.be/ns/statistiek#Statistiek>;
+    shacl:description "De waarde van het geobserveerdeKenmerk als resultaat van de StatistischeObservatie."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "resultaat"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/statistiek#resultaat>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/statistiek#StatistischeObservatie> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#SysteemtypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#TemporeelMomentKwantitatiefBereikShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#MomentKwantitatieveWaardepaar>;
+    shacl:description "Een element dat gegevens vertegenwoordigt van een specifiek tijdstip of periode."@nl;
+    shacl:name "element"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#element>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#TemporeelMomentKwantitatiefBereik> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#TemporeleEntiteitShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://www.w3.org/2006/time#TemporalEntity> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#ToebehorentypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#VerbruikszoneShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#Verbruikszone> .
+
+<https://data.test-vlaanderen.be/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30#WaterMeterShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "diameter"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/digitaleWatermeter#diameter>
+  ];
+  shacl:targetClass <https://saref.etsi.org/saref4watr/WaterMeter> .
