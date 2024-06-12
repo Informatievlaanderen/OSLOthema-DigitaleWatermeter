@@ -1,0 +1,1 @@
+java -jar "C:\Users\samue\Downloads\ea-model-validator-cli-1.2.jar" -d DigitaleWatermeter -f ../OSLO-DigitaleWatermeter.EAP -l nl

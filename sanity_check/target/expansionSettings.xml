@@ -1,0 +1,15 @@
+<expansionSettings>
+  <expansionDirectory>./expansions</expansionDirectory>
+  <modelDirectory>.</modelDirectory>
+  <programExpansions>
+    <expansion>
+      <type component="eaElements" name="EapFileProgram"/>
+      <target>OSLO-DigitaleWatermeter</target>
+    </expansion>
+  </programExpansions>
+  
+  <expansionResources>
+    <expansionResource name="be.nsi:ea-model-validations" version="1.1-SNAPSHOT"/>
+  </expansionResources>
+</expansionSettings>
+

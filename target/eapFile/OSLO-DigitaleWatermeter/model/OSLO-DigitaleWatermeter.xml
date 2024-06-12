@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eapFile xmlns="http://org.normalizedsystems.eaElements/1.0.0/eapFile">
+  <name>OSLO-DigitaleWatermeter</name>
+  <standardType>AP</standardType>
+  <diagramName>DigitaleWatermeter</diagramName>
+  <modelLanguage>nl</modelLanguage>
+</eapFile>
