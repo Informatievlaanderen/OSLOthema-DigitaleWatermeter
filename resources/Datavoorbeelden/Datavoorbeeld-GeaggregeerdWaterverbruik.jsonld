@@ -29,7 +29,7 @@
 				}
 			},
 			"Observatie.geobserveerdKenmerk": {
-				"@id": "cl-kt:drinkbaarwaterverbruik",
+				"@id": "cl-kt:drinkbaarwaterverbruiksvolume",
 				"@type": "Kenmerktype"
 			},
 			"Observatie.fenomeentijd": "_:Fenomtime001",
