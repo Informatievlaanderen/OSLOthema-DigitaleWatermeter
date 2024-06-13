@@ -96,7 +96,7 @@
 			},
 			"Sensor.implementeert": "_:Observatieprocedure001",
 			"Sensor.observeert": {
-				"@id": "cl-kt:drinkbaarwaterverbruik",
+				"@id": "cl-kt:drinkbaarwaterverbruiksvolume",
 				"@type": "Kenmerktype"
 			}
 		},
