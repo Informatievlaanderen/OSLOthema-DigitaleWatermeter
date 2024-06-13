@@ -1,0 +1,108 @@
+{
+	"@context": [
+		"https://raw.githubusercontent.com/Informatievlaanderen/data.vlaanderen.be-generated/test/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30/context/DigitaleWatermeter-ap.jsonld",
+		{
+			"xml-schema": "http://www.w3.org/2001/XMLSchema#",
+			"qudt-unit": "https://qudt.org/vocab/unit/"
+		},
+		{
+			"cl-postzone": "https://data.vlaanderen.be/id/postinfo/",
+			"cl-plaats": "https://data.vlaanderen.be/id/concept/DWM_Plaatstype/",
+			"cl-op": "https://data.vlaanderen.be/id/concept/DWM_Observatieproceduretype/",
+			"cl-kt": "https://data.vlaanderen.be/id/concept/DWM_Kenmerktype/",
+			"cl-idt": "https://data.vlaanderen.be/id/concept/DWM_Identificatortype/",
+			"cl-sst": "https://data.vlaanderen.be/id/concept/DWM_Sensortype/",
+			"cl-met": "https://data.vlaanderen.be/id/concept/DWM_Metertype/"
+		}
+	],
+	"@graph": [
+		{
+			"@id": "_:GeaggregeerdVerbruikObservatie001",
+			"@type": "GeaggregeerdVerbruikObservatie",
+			"GeaggregeerdVerbruikObservatie.geobserveerdObject": "_:Zone9000",
+			"GeaggregeerdVerbruikObservatie.resultaat": {
+				"@type": "KwantitatieveWaarde",
+				"KwantitatieveWaarde.waarde": 4032165.5,
+				"KwantitatieveWaarde.eenheid": {
+					"@type": "Eenheid",
+					"@id": "qudt-unit:M3"
+				}
+			},
+			"Observatie.geobserveerdKenmerk": {
+				"@id": "cl-kt:drinkbaarwaterverbruik",
+				"@type": "Kenmerktype"
+			},
+			"Observatie.fenomeentijd": "_:Fenomtime001",
+			"Observatie.resultaattijd": "_:BerekendeAggregatieTijd01",
+			"Observatie.gebruikteProcedure": "_:Observatieprocedure001",
+			"Observatie.uitgevoerdMetSensor": "_:Sensor001"
+		},
+		{
+			"@id": "_:BerekendeAggregatieTijd01",
+			"@type": "Moment",
+			"Moment.inXsdDateTime": {
+				"@type": "xml-schema:dateTime",
+				"@value": "2024-06-03T06:00:00.000"
+			}
+		},
+		{
+			"@id": "_:Fenomtime001",
+			"@type": "Periode",
+			"Periode.van": {
+				"@type": "Moment",
+				"Moment.inXsdDateTime": {
+					"@type": "xml-schema:dateTime",
+					"@value": "2024-06-02T06:00:00.000"
+				}
+			},
+			"Periode.tot": {
+				"@type": "Moment",
+				"Moment.inXsdDateTime": {
+					"@type": "xml-schema:dateTime",
+					"@value": "2024-06-01T06:00:00.000"
+				}
+			}
+		},
+		{
+			"@id": "_:Zone9000",
+			"@type": "Meterzone",
+			"Meterzone.aantalMeters": 4856,
+			"Meterzone.metertype": {
+				"@id": "cl-met:watermeter",
+				"@type": "Metertype"
+			},
+			"Plaats.plaatsnaam": {
+				"@value": "Postzone Gent",
+				"@language": "nl"
+			},
+			"Plaats.identificator": {
+				"@type": "Identificator",
+				"Identificator.identificator": {
+					"@value": "cl-postzone:9000",
+					"@type": "cl-idt:postcode"
+				}
+			},
+			"Plaats.type": {
+				"@id": "cl-plaats:postzone",
+				"@type": "Plaatstype"
+			}
+		},
+		{
+			"@id": "_:Sensor001",
+			"@type": "Sensor",
+			"Sensor.type": {
+				"@id": "cl-sst:DWH",
+				"@type": "Systeemtype"
+			},
+			"Sensor.implementeert": "_:Observatieprocedure001",
+			"Sensor.observeert": {
+				"@id": "cl-kt:drinkbaarwaterverbruik",
+				"@type": "Kenmerktype"
+			}
+		},
+		{
+			"@id": "_:Observatieprocedure001",
+			"@type": "Observatieprocedure"
+		}
+	]
+}
