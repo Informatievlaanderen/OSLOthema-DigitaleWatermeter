@@ -19,8 +19,8 @@
   ],
   "documentation": [
     {
-      "name": "Vocabularium Digitale Watermeter",
-      "resourceReference": "https://data.vlaanderen.be/ns/DigitaleWatermeter"
+      "name": "Vocabularium Nutsvoorzieningen Meters",
+      "resourceReference": "https://data.vlaanderen.be/ns/nutsvoorzieningen/meters"
     }
   ],
   "reports": [
