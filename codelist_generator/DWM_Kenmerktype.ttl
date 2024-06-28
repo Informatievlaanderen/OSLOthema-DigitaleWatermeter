@@ -7,19 +7,11 @@
 skos:prefLabel "Kenmerktype"@nl ;
 skos:definition "Codelijst van Kenmerktype"@nl .
 
-<https://data.vlaanderen.be/id/concept/DWM_Kenmerktype/index>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Kenmerktype/drinkbaarwaterverbruiksvolume>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "meterstand op tijdstip fenomeentijd"@nl ;
+skos:definition "Totale volume van drinkbaar water dat wordt verbruikt binnen een bepaalde periode."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Kenmerktype> ;
-skos:notation "index" ;
-skos:prefLabel "index"@nl ;
-skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Kenmerktype> .
-
-<https://data.vlaanderen.be/id/concept/DWM_Kenmerktype/verbruiktVolume>  a skos:Concept ;
-<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "watervolume verbruikt in de periode fenomeentijd"@nl ;
-skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Kenmerktype> ;
-skos:notation "volume" ;
-skos:prefLabel "verbruiktVolume"@nl ;
+skos:notation "drinkbaarwaterverbruiksvolume" ;
+skos:prefLabel "drinkbaarwaterverbruiksvolume"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Kenmerktype> .
 

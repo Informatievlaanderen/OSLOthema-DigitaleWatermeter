@@ -7,115 +7,115 @@
 skos:prefLabel "Plaatstype"@nl ;
 skos:definition "Codelijst van Plaatstype"@nl .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Gemeente>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/gemeente>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type gemeente."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "gemeente" ;
-skos:prefLabel "Gemeente"@nl ;
+skos:prefLabel "gemeente"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Arrondissement>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/arrondissement>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "Een arrondissement is een onderdeel van het grondgebied van de staat, dat wordt opgedeeld om administratieve of bestuurlijke redenen."@nl ;
+skos:definition "Plaats van het type arrondissement."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "arrondissement" ;
-skos:prefLabel "Arrondissement"@nl ;
+skos:prefLabel "arrondissement"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Provincie>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/provincie>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "Een provincie is een deelgebied van een land met vaak een eigen regionaal bestuur. Het gaat veelal om een bestuurs- of beheerslaag tussen het nationale en gemeentelijke bestuur, maar hier zijn uitzonderingen op."@nl ;
+skos:definition "Plaats van het type provincie."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "provincie" ;
-skos:prefLabel "Provincie"@nl ;
+skos:prefLabel "provincie"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Gewest>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/gewest>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type gewest."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "gewest" ;
-skos:prefLabel "Gewest"@nl ;
+skos:prefLabel "gewest"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Gemeenschap>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/gemeenschap>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type gemeenschap."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "gemeenschap" ;
-skos:prefLabel "Gemeenschap"@nl ;
+skos:prefLabel "gemeenschap"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Deelgemeente>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/deelgemeente>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type deelgemeente."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "deelgemeente" ;
-skos:prefLabel "Deelgemeente"@nl ;
+skos:prefLabel "deelgemeente"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Land>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/land>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type land."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "land" ;
-skos:prefLabel "Land"@nl ;
+skos:prefLabel "land"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Postzone>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/postzone>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type postzone."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "postzone" ;
-skos:prefLabel "Postzone"@nl ;
+skos:prefLabel "postzone"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Politiezone>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/politiezone>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type politiezone."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "politiezone" ;
-skos:prefLabel "Politiezone"@nl ;
+skos:prefLabel "politiezone"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Hulpverleningszone>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/hulpverleningszone>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type hulpverleningszone."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "hulpverleningszone" ;
-skos:prefLabel "Hulpverleningszone"@nl ;
+skos:prefLabel "hulpverleningszone"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Straat>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/straat>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type straat."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "straat" ;
-skos:prefLabel "Straat"@nl ;
+skos:prefLabel "straat"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Bevoorradingsgebied>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/bevoorradingsgebied>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type bevoorradingsgebied."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "bevoorradingsgebied" ;
-skos:prefLabel "Bevoorradingsgebied"@nl ;
+skos:prefLabel "bevoorradingsgebied"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Verbruikszone>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/verbruikszone>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "nan"@nl ;
+skos:definition "Plaats van het type verbruikzone."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "verbruikszone" ;
-skos:prefLabel "Verbruikszone"@nl ;
+skos:prefLabel "verbruikszone"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/Wegsegment>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Plaatstype/wegsegment>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "Een wegsegment is dat deel van de wegbaan (Wbn) dat niet als kruispuntzone gekarteerd wordt. Tussen twee kruispuntzones wordt één wegsegment opgenomen."@nl ;
+skos:definition "Plaats van het type wegsegment."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> ;
 skos:notation "wegsegment" ;
-skos:prefLabel "Wegsegment"@nl ;
+skos:prefLabel "wegsegment"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Plaatstype> .
 
