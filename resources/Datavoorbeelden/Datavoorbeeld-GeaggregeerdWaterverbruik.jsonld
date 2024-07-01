@@ -1,6 +1,6 @@
 {
 	"@context": [
-		"https://raw.githubusercontent.com/Informatievlaanderen/data.vlaanderen.be-generated/test/doc/applicatieprofiel/DigitaleWatermeter/kandidaatstandaard/2024-04-30/context/DigitaleWatermeter-ap.jsonld",
+		"https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter/main/resources/Datavoorbeelden/context.jsonld",
 		{
 			"xml-schema": "http://www.w3.org/2001/XMLSchema#",
 			"qudt-unit": "https://qudt.org/vocab/unit/"
