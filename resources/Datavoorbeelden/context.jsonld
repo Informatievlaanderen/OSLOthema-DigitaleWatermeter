@@ -224,7 +224,6 @@
       "@id": "https://qudt.org/schema/qudt/value"
     },
     "LokaleNaam": "http://www.w3.org/2001/XMLSchema#string",
-    "MachineLearningInput": "https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#MachineLearning Input",
     "MachineLearningInput.model": {
       "@id": "https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#model",
       "@type": "@id"
