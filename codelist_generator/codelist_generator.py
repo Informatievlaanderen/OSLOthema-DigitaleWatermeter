@@ -1,9 +1,6 @@
 import pandas as pd
-import openpyxl
 from openpyxl import load_workbook
-import xlrd
-from googletrans import Translator, constants
-from pprint import pprint
+from googletrans import Translator
 
 translator = Translator()
 

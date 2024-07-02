@@ -92,7 +92,7 @@
 			"@type": "Sensor",
 			"Sensor.type": {
 				"@id": "cl-sst:DWH",
-				"@type": "Systeemtype"
+				"@type": "Sensortype"
 			},
 			"Sensor.implementeert": "_:Observatieprocedure001",
 			"Sensor.observeert": {

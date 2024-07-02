@@ -25,7 +25,7 @@ skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpuntty
 
 <https://data.vlaanderen.be/id/concept/DWM_Afleverpunttype/Gemeenschappelijk_Deel>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "Het geheel van gemeenschappelijke ruimten, en bij uitbreiding, gedeelde bouwkundige structuren (= fundering, muren, gevel, liftkokers, dak …) in een gebouw."@nl ;
+skos:definition "Het geheel van gemeenschappelijke ruimten, en bij uitbreiding, gedeelde bouwkundige structuren (= fundering, muren, gevel, liftkokers, dak â€¦) in een gebouw."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
 skos:notation "gemeenschappelijk_deel" ;
 skos:prefLabel "Gemeenschappelijk Deel"@nl ;
@@ -33,7 +33,7 @@ skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpuntty
 
 <https://data.vlaanderen.be/id/concept/DWM_Afleverpunttype/Gemeenschappelijke_ruimte>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "Binnenruimte die bedoeld is om door meerdere partijen gebruikt te worden. Voorbeelden zijn gedeelde circulatieruimten, keukens, sanitaire ruimten, zitruimten, kelders, zolders …."@nl ;
+skos:definition "Binnenruimte die bedoeld is om door meerdere partijen gebruikt te worden. Voorbeelden zijn gedeelde circulatieruimten, keukens, sanitaire ruimten, zitruimten, kelders, zolders â€¦."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Afleverpunttype> ;
 skos:notation "gemeenschappelijke_ruimte" ;
 skos:prefLabel "Gemeenschappelijke ruimte"@nl ;
