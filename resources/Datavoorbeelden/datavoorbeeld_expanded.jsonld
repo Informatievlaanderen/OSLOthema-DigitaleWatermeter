@@ -1,0 +1,185 @@
+[
+  {
+    "@id": "_:GeaggregeerdVerbruikObservatie001",
+    "@type": [
+      "https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#GeaggregeerdVerbruikObservatie"
+    ],
+    "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest": [
+      {
+        "@id": "_:Zone9000"
+      }
+    ],
+    "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": [
+      {
+        "@type": [
+          "https://qudt.org/schema/qudt/QuantityValue"
+        ],
+        "https://qudt.org/schema/qudt/hasUnit": [
+          {
+            "@id": "https://qudt.org/vocab/unit/M3",
+            "@type": [
+              "http://qudt.org/2.1/schema/qudt/Unit"
+            ]
+          }
+        ],
+        "https://qudt.org/schema/qudt/value": [
+          {
+            "@value": 4032165.5
+          }
+        ]
+      }
+    ],
+    "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime": [
+      {
+        "@id": "_:Fenomtime001"
+      }
+    ],
+    "http://www.w3.org/ns/sosa/usedProcedure": [
+      {
+        "@id": "_:Observatieprocedure001"
+      }
+    ],
+    "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/DWM_Kenmerktype/drinkbaarwaterverbruiksvolume",
+        "@type": [
+          "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
+        ]
+      }
+    ],
+    "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultTime": [
+      {
+        "@id": "_:BerekendeAggregatieTijd01"
+      }
+    ],
+    "http://www.w3.org/ns/sosa/madeBySensor": [
+      {
+        "@id": "_:Sensor001"
+      }
+    ]
+  },
+  {
+    "@id": "_:BerekendeAggregatieTijd01",
+    "@type": [
+      "http://www.w3.org/2006/time#Instant"
+    ],
+    "http://www.w3.org/2006/time#inXSDDateTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-03T06:00:00.000"
+      }
+    ]
+  },
+  {
+    "@id": "_:Fenomtime001",
+    "@type": [
+      "http://www.w3.org/2006/time#ProperInterval"
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+      {
+        "@type": [
+          "http://www.w3.org/2006/time#Instant"
+        ],
+        "http://www.w3.org/2006/time#inXSDDateTime": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@value": "2024-06-02T06:00:00.000"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+      {
+        "@type": [
+          "http://www.w3.org/2006/time#Instant"
+        ],
+        "http://www.w3.org/2006/time#inXSDDateTime": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@value": "2024-06-01T06:00:00.000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Zone9000",
+    "@type": [
+      "https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#Meterzone"
+    ],
+    "https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#aantalMeters": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 4856
+      }
+    ],
+    "https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#metertype": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/DWM_Metertype/watermeter",
+        "@type": [
+          "http://www.w3.org/2004/02/skos/core#Concept"
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/adms#identifier": [
+      {
+        "@type": [
+          "http://www.w3.org/ns/adms#Identifier"
+        ],
+        "http://www.w3.org/2004/02/skos/core#notation": [
+          {
+            "@type": "https://data.vlaanderen.be/id/concept/DWM_Identificatortype/postcode",
+            "@value": "cl-postzone:9000"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "nl",
+        "@value": "Postzone Gent"
+      }
+    ],
+    "http://purl.org/dc/terms/type": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/DWM_Plaatstype/postzone",
+        "@type": [
+          "http://www.w3.org/2004/02/skos/core#Concept"
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Sensor001",
+    "@type": [
+      "https://www.w3.org/ns/sosa/Sensor"
+    ],
+    "http://www.w3.org/ns/ssn/implements": [
+      {
+        "@id": "_:Observatieprocedure001"
+      }
+    ],
+    "http://www.w3.org/ns/sosa/observes": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/DWM_Kenmerktype/drinkbaarwaterverbruiksvolume",
+        "@type": [
+          "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
+        ]
+      }
+    ],
+    "http://purl.org/dc/terms/type": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/DWM_Sensortype/DWH",
+        "@type": [
+          "http://www.w3.org/2004/02/skos/core#Concept"
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Observatieprocedure001",
+    "@type": [
+      "http://www.w3.org/ns/sosa/Procedure"
+    ]
+  }
+]
