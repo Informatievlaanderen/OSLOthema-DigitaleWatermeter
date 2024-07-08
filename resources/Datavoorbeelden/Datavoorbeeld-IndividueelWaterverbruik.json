@@ -1,82 +1,81 @@
 {
 	"@context": [
+		"https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter/main/resources/Datavoorbeelden/context.jsonld",
 		{
-			"cl-idt": "https://example.com/concept/identificatortype/",
-			"cl-syt": "https://example.com/concept/systeemtype/"
+			"cl-idt": "https://data.vlaanderen.be/id/concept/DWM_Identificatortype/",
+			"cl-syt": "https://data.vlaanderen.be/id/concept/DWM_Systeemtype/"
 		}
 	],
 	"@graph": [
 		{
-		"@id": "https://example.com/id/observaties/observatie1",
-		"@type": "Observatie",
-		"Observatie.resultaat": {
-		{
-	          "@type": "KwantitatieveWaarde",
-	          "KwantitatieveWaarde.waarde": ,
-	          "KwantitatieveWaarde.standaardEenheid": {
-	            "@id": "qudt-unit:..",
-	            "@type": "qudt-schema:unit"
-	          }},
-		"Observatie.fenomeentijd":{
-			"@type": "time:TemporalEntity",
-		        "time:hasBeginning": {
-		          "@type": "time:Instant",
-		          "time:inXSDDateTime": {
-		            "@type": "xml-schema:dateTime",
-		            "@value": "20210930T06:00:00.000"
-		          }
-		        },
-		        "time:hasEnd": {
-		          "@type": "time:Instant",
-		          "time:inXSDDateTime": {
-		            "@type": "xml-schema:dateTime",
-		            "@value": "20210930T07:00:00.000"
-		          }
-		        }
-		      },
-		"Observatie.uitgevoerdMetSensor":"https://example.com/id/meters/watermeter123",
-		
+			"@id": "_:IndividueelVerbruikObservatie001",
+			"@type": "IndividueelVerbruikObservatie",
+			"IndividueelVerbruikObservatie.resultaat": {
+				"@type": "KwantitatieveWaarde",
+				"KwantitatieveWaarde.waarde": 1032.2,
+				"KwantitatieveWaarde.eenheid": {
+					"@type": "Eenheid",
+					"@id": "qudt-unit:M3"
+				}
+			},
+			"Observatie.geobserveerdKenmerk": {
+				"@id": "cl-kt:drinkbaarwaterverbruiksvolume",
+				"@type": "Kenmerktype"
+			},
+			"Observatie.fenomeentijd": "_:Fenomtime001",
+			"Observatie.uitgevoerdMetSensor": "_:Watermeter001"
 		},
-		
-
-		}
 		{
-			"@id": "https://example.com/id/meters/watermeter123",
+			"@id": "_:Fenomtime001",
+			"@type": "time:TemporalEntity",
+			"time:hasBeginning": {
+				"@type": "time:Instant",
+				"time:inXSDDateTime": {
+					"@type": "xml-schema:dateTime",
+					"@value": "2021-09-30T06:00:00.000"
+				}
+			},
+			"time:hasEnd": {
+				"@type": "time:Instant",
+				"time:inXSDDateTime": {
+					"@type": "xml-schema:dateTime",
+					"@value": "2021-09-30T07:00:00.000"
+				}
+			}
+		},
+		{
+			"@id": "_:Watermeter001",
 			"@type": "Meter",
 			"Meter.identificator": [
 				{
 					"@type": "Identificator",
-					"identificator.identificator": {
+					"Identificator.identificator": {
 						"@value": "8SET0000414397",
 						"@type": "cl-idt:serienummer"
 					}
 				}
 			],
-			"Systeem.type": [
-				{
-					"@id": "cl-syt:DigitaleWatermeter",
-					"@type": "skos:Concept"
-				}
-			],
-			"Meter.metertype": "https://example.com/id/metertypes/watermetertype456"
-		},
-		{
-			"@id": "https://example.com/id/metertypes/watermetertype456",
-			"@type": "Metertype",
-			"Systeem.type": [
-				{
-					"@id": "cl-syt:DigitaleWatermeter",
-					"@type": "skos:Concept"
-				}
-			],
-			"Toestel.fabrikant": {
+			"Sensor.type": {
+				"@id": "cl-syt:DigitaleWatermeter",
+				"@type": "Systeemtype"
+			},
+			"Meter.fabrikant": {
 				"@value": "SAGECOM",
 				"@language": "en"
 			},
-			"Toestel.model": {
+			"Meter.model": {
 				"@value": "US METER DN20 T2 Q3=2,5 L 190 Siconia",
 				"@language": "en"
+			},
+			"Sensor.implementeert": "_:Observatieprocedure001",
+			"Sensor.observeert": {
+				"@id": "cl-kt:drinkbaarwaterverbruiksvolume",
+				"@type": "Kenmerktype"
 			}
+		},
+		{
+			"@id": "_:Observatieprocedure001",
+			"@type": "Observatieprocedure"
 		}
 	]
 }

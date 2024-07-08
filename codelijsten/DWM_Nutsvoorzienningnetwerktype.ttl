@@ -23,12 +23,12 @@ skos:notation "elektriciteit" ;
 skos:prefLabel "elektriciteit"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Nutsvoorzienningnetwerktype> .
 
-<https://data.vlaanderen.be/id/concept/DWM_Nutsvoorzienningnetwerktype/olie,_gas_of_chemicaliën>  a skos:Concept ;
+<https://data.vlaanderen.be/id/concept/DWM_Nutsvoorzienningnetwerktype/olie,_gas_of_chemicaliÃ«n>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
 skos:definition "olie, gas of chemisch netwerk"@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Nutsvoorzienningnetwerktype> ;
 skos:notation "olie" ;
-skos:prefLabel "olie, gas of chemicaliën"@nl ;
+skos:prefLabel "olie, gas of chemicaliÃ«n"@nl ;
 skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Nutsvoorzienningnetwerktype> .
 
 <https://data.vlaanderen.be/id/concept/DWM_Nutsvoorzienningnetwerktype/riool>  a skos:Concept ;
