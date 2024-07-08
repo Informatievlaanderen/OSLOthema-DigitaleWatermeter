@@ -11,7 +11,7 @@
 			"cl-op": "https://data.vlaanderen.be/id/concept/DWM_Observatieproceduretype/",
 			"cl-kt": "https://data.vlaanderen.be/id/concept/DWM_Kenmerktype/",
 			"cl-idt": "https://data.vlaanderen.be/id/concept/DWM_Identificatortype/",
-			"cl-sst": "https://data.vlaanderen.be/id/concept/DWM_Sensortype/",
+			"cl-sst": "https://data.vlaanderen.be/id/concept/DWM_Systeemtype/",
 			"cl-met": "https://data.vlaanderen.be/id/concept/DWM_Metertype/"
 		}
 	],
@@ -88,7 +88,7 @@
 			}
 		},
 		{
-			"@id": "_:Sensor001",
+			"@id": "_:Systeemtype001",
 			"@type": "Sensor",
 			"Sensor.type": {
 				"@id": "cl-sst:DWH",
