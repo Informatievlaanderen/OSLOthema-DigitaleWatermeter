@@ -9,7 +9,7 @@ skos:definition "Codelijst van identificatortype"@nl .
 
 <https://data.vlaanderen.be/id/concept/DWM_Identificatortype/postcode>  a skos:Concept ;
 <https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
-skos:definition "Reeks cijfers en/of letters die wordt gebruikt om een specifiek geografisch gebied te identificeren voor het efficiÃ«nt sorteren en bezorgen van post."@nl ;
+skos:definition "Reeks cijfers en/of letters die wordt gebruikt om een specifiek geografisch gebied te identificeren voor het efficiënt sorteren en bezorgen van post."@nl ;
 skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Identificatortype> ;
 skos:notation "postcode" ;
 skos:prefLabel "postcode"@nl ;
