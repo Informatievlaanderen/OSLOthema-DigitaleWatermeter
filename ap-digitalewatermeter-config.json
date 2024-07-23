@@ -39,6 +39,10 @@
     {
       "name": "Verslag Thematische Werkgroep III - 21 mei 2024",
       "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter/standaardenregister/reports/20240521_ThematicWorkshop3_Verslag_OSLODigitaleWatermeter.pdf"
+    },
+    {
+      "name": "Verslag Thematische Werkgroep IIII - 17 jun 2024",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter/standaardenregister/reports/20240617_ThematicWorkshop4_Verslag_OSLODigitaleWatermeter.pdf"
     }
   ],
   "charter": {
@@ -61,6 +65,10 @@
     {
       "name": "Presentatie Thematische Werkgroep III - 21 mei 2024",
       "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter/standaardenregister/presentations/20240521_ThematicWorkshop3_Powerpoint_OSLODigitaleWatermeter.pptx"
+    },
+    {
+      "name": "Presentatie Thematische Werkgroep IIII - 17 jun 2024",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter/standaardenregister/presentations/20240617_ThematicWorkshop4_Powerpoint_OSLODigitaleWatermeter.pptx"
     }
   ],
   "dateOfRegistration": "21 maart 2024",
