@@ -1,6 +1,6 @@
 [
   {
-    "name": "DigitaleWatermeter-voc",
+    "name": "DigitaleWatermeter",
     "type": "voc",
     "eap": "OSLO-DigitaleWatermeter.EAP",
     "diagram": "DigitaleWatermeter",
