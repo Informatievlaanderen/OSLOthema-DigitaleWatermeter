@@ -5,7 +5,7 @@
     "eap": "OSLO-DigitaleWatermeter.EAP",
     "diagram": "DigitaleWatermeter",
     "template": "digitalewatermeter-voc.j2",
-    "title": "Vocabularium Digitale Watermeter",
+    "title": "Vocabularium Nutsvoorzieningen Meters",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "publication-date": "2024-08-30",
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
