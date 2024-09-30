@@ -4,6 +4,7 @@
     "type": "voc",
     "eap": "OSLO-DigitaleWatermeter.EAP",
     "diagram": "DigitaleWatermeter",
+    "prefix": "nutsvoorzieningen",
     "template": "mijn-vocabularium-voc.j2",
     "title": "OSLO Nutsvoorzieningen Meters (Vocabularium)",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
