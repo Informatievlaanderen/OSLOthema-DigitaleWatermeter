@@ -1,27 +1,21 @@
-Voornaam;Naam;Affiliatie;E-mail;Website;MijnKolom
-Pieter Jan;Haest;De Watergroep;;;A
-Peter;Pijpops;Water-Link;;;A
-Eva;Robbrecht;IMEC;eva.robbrecht@vlaanderen.be;;E
-Samuel;Van Ackere;Vlaamse Smart Data Space;samuel.vanackere@vlaanderen.be;;E
-Simon;Claus;Vlaamse Smart Data Space;;;C
-Geert;Thijs;Digitaal Vlaanderen;geert.thijs@vlaanderen.be;;E
-Ben;De Meester;IMEC;ben.demeester@vlaanderen.be;;E
-Veerle;Beyaert;Digitaal Vlaanderen;veerle.beyaert@vlaanderen.be;;E
-Raf;Buyle;Digitaal Vlaanderen;raf.buyle@vlaanderen.be;;E
-Kim;Leemans;Digitaal Vlaanderen;kim.leemans@vlaanderen.be;;E
-Ziggy;Vanlishout;Digitaal Vlaanderen;ziggy.vanlishout@vlaanderen.be;;E
-Laurens;Vercauteren;Digitaal Vlaanderen;laurens.vercauteren@vlaanderen.be;;E
-Eveline;Vlassenroot;Digitaal Vlaanderen;eveline.vlassenroot@vlaanderen.be;;E
-William;Verbeeck;Digitaal Vlaanderen;william.verbeeck@vlaanderen.be;;E
-Isabaut;Martens;Digitaal Vlaanderen;isabaut.martens@vlaanderen.be;;E
-Jitse;De Cock;Digitaal Vlaanderen;jitse.decock@vlaanderen.be;;E
-Inge;Opreel;Farys;;;C
-Anke;Geudens;Pidpa;;;C
-Annemie;Biermans;Pidpa;;;C
-Danny;Lepomme;Pidpa;;;C
-Senne;Meeusen;Farys;;;C
-Kevin;De Wilde;Capgemini;;;C
-Marco;Indigne;Hydroko;;;C
-Frank;Coucke;De Watergroep;;;C
-Stefaan;Debruyne;De Watergroep;;;C
-Emilia;Liégeois;VITO;;;C
+Voornaam;Naam;Affiliatie;E-mail;Website;MijnKolom;
+Pieter Jan;Haest;De Watergroep;;https://www.dewatergroep.be/;A;
+Peter;Pijpops;water-link;;https://data.vlaanderen.be/id/organisatie/OVO003396;A;
+Eva;Robbrecht;Digitaal Vlaanderen;eva.robbrecht@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+Samuel;Van Ackere;Digitaal Vlaanderen;samuel.vanackere@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+Simon;Claus;Digitaal Vlaanderen;simon.claus@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;C;
+Geert;Thijs;Digitaal Vlaanderen;geert.thijs@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+Ben;De Meester;Digitaal Vlaanderen;ben.demeester@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+William;Verbeeck;Digitaal Vlaanderen;william.verbeeck@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+Isabaut;Martens;Digitaal Vlaanderen;isabaut.martens@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+Jitse;De Cock;Digitaal Vlaanderen;jitse.decock@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+Inge;Opreel;Farys;;https://data.vlaanderen.be/id/organisatie/OVO008457;C;
+Anke;Geudens;Pidpa;;https://data.vlaanderen.be/id/organisatie/OVO003530;C;
+Annemie;Biermans;Pidpa;;https://data.vlaanderen.be/id/organisatie/OVO003530;C;
+Danny;Lepomme;Pidpa;;https://data.vlaanderen.be/id/organisatie/OVO003530;C;
+Senne;Meeusen;Farys;;https://data.vlaanderen.be/id/organisatie/OVO008457;C;
+Kevin;De Wilde;Capgemini;;https://www.capgemini.com/be-en/;C;
+Marco;Indigne;Hydroko;;https://hydroko.com/;C;
+Frank;Coucke;De Watergroep;;https://www.dewatergroep.be/;C;
+Stefaan;Debruyne;De Watergroep;;https://www.dewatergroep.be/;C;
+Emilia;Liégeois;VITO;;https://data.vlaanderen.be/id/organisatie/OVO000041;C;
