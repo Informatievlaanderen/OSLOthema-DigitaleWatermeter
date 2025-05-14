@@ -2,7 +2,7 @@
   "title": "Vocabularium Nutsvoorzieningen Meters",
   "category": "Vocabularium",
   "usage": "Aanbevolen (vrijwillig)",
-  "status": "erkende-standaard",
+  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/ErkendeStandaard",
   "descriptionFileName": "voc-digitalewatermeter-config.md",
   "responsibleOrganisation": [
     {
