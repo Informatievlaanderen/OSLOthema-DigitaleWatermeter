@@ -1,7 +1,7 @@
 {
   "title": "Applicatieprofiel Digitale Watermeter",
   "category": "Applicatieprofiel",
-  "usage": "Aanbevolen (vrijwillig)",
+  "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
   "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/ErkendeStandaard",
   "descriptionFileName": "ap-digitalewatermeter-config.md",
   "responsibleOrganisation": [
