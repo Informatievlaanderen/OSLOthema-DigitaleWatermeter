@@ -1,6 +1,6 @@
 [
   {
-    "name": "DigitaleWatermeter-ap",
+    "name": "DigitaleWatermeter",
     "type": "ap",
     "eap": "OSLO-DigitaleWatermeter.EAP",
     "diagram": "DigitaleWatermeter",
