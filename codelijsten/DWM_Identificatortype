@@ -1,0 +1,17 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/DWM_Identificatortype>  a skos:ConceptScheme ;
+<https://www.w3.org/ns/adms#status> <https://data.vlaanderen.be/id/concept/Status/ingebruik> ;
+skos:prefLabel "Identificatortype"@nl ;
+skos:definition "Codelijst van identificatortype"@nl .
+
+<https://data.vlaanderen.be/id/concept/DWM_Identificatortype/postcode>  a skos:Concept ;
+<https://www.w3.org/ns/adms#status> <https://wegenenverkeer.data.vlaanderen.be/id/concept/DWMStatus/ingebruik> ;
+skos:definition "Reeks cijfers en/of letters die wordt gebruikt om een specifiek geografisch gebied te identificeren voor het effici�nt sorteren en bezorgen van post."@nl ;
+skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/DWM_Identificatortype> ;
+skos:notation "postcode" ;
+skos:prefLabel "postcode"@nl ;
+skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/DWM_Identificatortype> .
+
