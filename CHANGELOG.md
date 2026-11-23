@@ -25,6 +25,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Empty `definition-en` values
 - Empty `definition-nl` values
 
+### Added
+- NL tags for Dataset.isVersionOf
+
 ## 2025-01-06
  - Added definition to attribute vereiststroom of Meter
  - Added label to Meting (OSLO-Grondwatermeetnet)
