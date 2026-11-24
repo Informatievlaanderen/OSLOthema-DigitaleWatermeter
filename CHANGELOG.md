@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace https://www.w3.org/ns/prov# with http://www.w3.org/ns/prov#
 - Replace abbreviations
 - Capitalise sentences
+- Label of http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature
 
 ### Removed
 - Empty `ap-usageNote-nl` values
